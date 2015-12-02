@@ -13,11 +13,11 @@
     "lib": "./lib"
   },
   "dependencies": {
-    "lodash": "^3.10.1",
-    "pluralize": "^1.2.1"
+    "lodash": "~3.10.1",
+    "pluralize": "~1.2.1"
   },
   "devDependencies": {
-    "xo": "^0.11.0"
+    "xo": "~0.11.0"
   },
   "xo": {
     "space": true,
