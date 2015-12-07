@@ -5,17 +5,17 @@
   "schema": true,
   "attributes": {
 <%= attributes %><% if (attributes.length) { %>,<% } %>
-  "createdBy": {
-    "model": "user"
+    "createdBy": {
+      "model": "user"
+    },
+    "updatedBy": {
+      "model": "user"
+    },
+    "contributors": {
+      "collection": "user",
+      "via": "<%= idPluralized %>"
+    }
   },
-  "updatedBy": {
-    "model": "user"
-  },
-  "contributors": {
-    "collection": "user",
-    "via": "<%= idPluralized %>"
-  }
-},
   "autoCreatedAt": true,
   "autoUpdatedAt": true
 }
