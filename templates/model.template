@@ -93,6 +93,8 @@ module.exports = {
           model: api
         }));
       }
+    } else if (strapi.api.hasOwnProperty(api) && !_.size(strapi.api[api].templates)) {
+      next();
     } else {
       next(new Error('Unknow API or no template detected'));
     }
