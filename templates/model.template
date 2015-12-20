@@ -96,7 +96,7 @@ module.exports = {
     } else if (strapi.api.hasOwnProperty(api) && !_.size(strapi.api[api].templates)) {
       next();
     } else {
-      next(new Error('Unknow API or no template detected'));
+      next(new Error('Unknown API or no template detected'));
     }
   }
 
